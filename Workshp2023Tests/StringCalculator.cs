@@ -25,7 +25,7 @@ namespace Workshp2023Tests
                 string[] numbers = str.Split(separtors.ToArray());
                 num = numbers.Sum(n => {
                     if (int.Parse(n) < 0) throw new ArgumentException();
-                    if (int.Parse(n) > 1000) return 0;
+                    if (int.Parse(n) > 100) return 0;
                     return int.Parse(n); 
                 });
             }

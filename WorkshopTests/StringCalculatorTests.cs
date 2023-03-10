@@ -76,6 +76,7 @@ namespace WorkshopTests
         [InlineData("1002\n-1")]
         [InlineData("-10")]
         [InlineData("1000, -1, 2")]
+        [InlineData("1000, -3, 2")]
         public void ThrowErrorIfThereIsNegativeNumber(string str)
         {
             Assert.Throws<ArgumentException>(() => StringCalculator.Calculate(str));
